@@ -3,38 +3,48 @@ import style from './Header.module.scss'
 
 const Header = () => {
     return (
-        <div className='container'>
-            <header className={style.header}>
-                <nav className={style.navbar}>
-                    <nav className={style.navbarLeft}>
-                        <ul className={style.navbarList}>
-                            <li className={style.navbarItem}>
-                                <a className={[style.logo, 'underlineAnimation'].join(' ')} href="/">PLANTS</a>
-                            </li>
-                            <li className={style.navbarItem}>
-                                <a className={[style.pageLink, 'underlineAnimation'].join(' ')} href="">Магазин</a>
-                            </li>
-                            <li className={style.navbarItem}>
-                                <a className={[style.pageLink, 'underlineAnimation'].join(' ')} href="">Новые поступления</a>
-                            </li>
-                            <li className={style.navbarItem}>
-                                <a className={[style.pageLink, 'underlineAnimation'].join(' ')} href="">Уход</a>
-                            </li>
-                            <li className={style.navbarItem}>
-                                <a className={[style.pageLink, 'underlineAnimation'].join(' ')} href="">О нас</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <nav className={style.navbarRight}>
-                        <ul className={style.navbarList}>
-                            <li className={style.navbarItem}>Поиск</li>
-                            <li className={style.navbarItem}>Войти</li>
-                            <li className={style.navbarItem}>Корзина</li>
-                        </ul>
-                    </nav>
-                </nav>
-            </header>
-        </div>
+        <header className={style.header}>
+            <nav className={style.navbar}>
+                <div className={style.logo}>
+                    THE<br/>
+                    PLANTS
+                </div>
+                <ul className={[style.list, style.pageLinks].join(' ')}>
+                    <li className={style.item}>
+                        <a href="/">Растения</a>
+                    </li>
+                    <li className={style.item}>
+                        <a href="/">Уход</a>
+                    </li>
+                    <li className={style.item}>
+                        <a href="/">Горшки</a>
+                    </li>
+                    <li className={style.item}>
+                        <a href="/">Блог</a>
+                    </li>
+                    <li className={style.item}>
+                        <a href="/">О Нас</a>
+                    </li>
+                    <li className={style.item}>
+                        <a href="/">Доставка и Оплата</a>
+                    </li>
+                </ul>
+                <ul className={[style.list, style.icons].join(' ')}>
+                    <li className={style.item}>
+                        <button className={[style.searchBtn, style.btn].join(' ')}>se</button>
+                    </li>
+                    <li className={style.item}>
+                        <button className={[style.searchBtn, style.btn].join(' ')}>ca</button>
+                    </li>
+                    <li className={style.item}>
+                        <button className={[style.searchBtn, style.btn].join(' ')}>ac</button>
+                    </li>
+                    <li className={style.item}>
+                        <button className={[style.searchBtn, style.btn].join(' ')}>ca</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     );
 };
 

@@ -1,41 +1,21 @@
-@font-face {
-  font-family: 'PT_Serif';
-  src: url('../resources/fonts/PT_Serif/PTSerif-Regular.otf');
-  src: url('../resources/fonts/PT_Serif/PTSerif-Regular.eot?#iefix') format('embedded-opentype');
-  font-style: normal;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: 'PT_Serif';
-  src: url('../resources/fonts/PT_Serif/PTSerif-Bold.ttf');
-  font-style: normal;
-  font-weight: 700;
-}
+@import "btnAnimation.scss";
 
 *{
   margin: 0;
   padding: 0;
-  font-family: "PT_Serif", serif;
-  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
   font-weight: 400;
   font-style: normal;
-  color: #2d2a24;
+  color: black;
   box-sizing: border-box;
 }
 
 .container{
-  max-width: 1440px;
+  max-width: 1300px;
   margin: 0 auto;
   box-sizing: content-box;
-  padding: 0 15px;
-}
-
-.container_inner{
-  max-width: 1345px;
-  margin: 0 auto;
-  padding: 0 50px;
-  box-sizing: content-box;
+  padding: 0 30px;
 }
 
 ::selection {
@@ -45,19 +25,12 @@
 
 h1{
   font-weight: 400;
-  font-size: 70px;
+  line-height: 145px;
+  font-size: 80px;
 }
 
 h2{
-  font-size: 48px;
-}
-
-h3{
-  font-size: 36px;
-}
-
-h4{
-  font-size: 18px;
+  font-size: 24px;
 }
 
 ul{
@@ -78,6 +51,7 @@ a{
 button{
   border: none;
   background-color: inherit;
+  cursor: pointer;
 }
 
 img{
@@ -90,6 +64,8 @@ input[type="text"] {
   line-height: inherit;
   margin: 0;
 }
+
+//****
 
 .underlineAnimation{
   position: relative;
@@ -110,3 +86,7 @@ input[type="text"] {
   transform-origin: top left;
   transition: transform 0.3s ease;
 }
+
+//****
+
+
