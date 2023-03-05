@@ -38,6 +38,9 @@ $search-icon: url('../../../public/resources/img/icons/search.png');
 }
 
 .item{
+  a{
+    transition: color 0.3s ease;
+  }
   a:hover{
     color: #00ab84;
   }

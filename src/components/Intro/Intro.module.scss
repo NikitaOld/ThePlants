@@ -8,15 +8,6 @@
   margin-top: 80px;
 }
 
-.btn{
-  //border-radius: 100px;
-  border: solid black 3px;
-  font-size: 20px;
-  padding: 0.6em 1.5em;
-  font-weight: 500;
-  margin-top: 30px;
-}
-
 .mainImg{
   height: auto;
   width: 630px;
@@ -28,6 +19,7 @@
     line-height: 100px;
   }
 }
+
 @media screen and (max-width: 1024px) {
   .mainText{
     font-size: 80px;
@@ -38,6 +30,7 @@
     width: 500px;
   }
 }
+
 @media screen and (max-width: 880px) {
   .mainText{
     font-size: 60px;

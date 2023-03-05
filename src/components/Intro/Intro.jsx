@@ -7,10 +7,10 @@ const Intro = () => {
             <div>
                 <h1 className={style.mainText}>THE<br/>PLANTS</h1>
                 <p>Lorem ipsum lorem ipsum lorem</p>
-                <button className={[style.btn, 'btnAnimation'].join(' ')}>Купить</button>
+                <button className={['btn', 'btnAnimation'].join(' ')}>Купить</button>
             </div>
             <div>
-                <img className={style.mainImg} src='/resources/img/plant.png' alt=""/>
+                <img className={style.mainImg} src='/resources/img/introPlant.png' alt=""/>
             </div>
         </div>
     );
