@@ -1,17 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
+import DropdownNavbarMenu from "../dropdownNavbarMenu/DropdownNavbarMenu";
 import style from './Header.module.scss'
+import {Link} from "react-router-dom";
 
 const Header = () => {
+    const [isDropdown, setDropdown] = useState(false);
+
     return (
         <header className={style.header}>
+            {/*{isDropdown ? <dropdownNavbarMenu/> : null}*/}
             <nav className={style.navbar}>
                 <div className={style.logo}>
-                    THE<br/>
-                    PLANTS
+                    <Link to='/' className={style.logoLink}>
+                        THE<br/>
+                        PLANTS
+                    </Link>
                 </div>
                 <ul className={[style.list, style.pageLinks].join(' ')}>
-                    <li className={style.item}>
-                        <a href="/">Растения</a>
+                    <li className={style.item}
+                        onMouseOver={() => setDropdown(true)}
+                        onMouseLeave={() => setDropdown(false)}>
+                        <Link className={style.linkToPage} to='/collections/all-plants'>Растения</Link>
                     </li>
                     <li className={style.item}>
                         <a href="/">Уход</a>

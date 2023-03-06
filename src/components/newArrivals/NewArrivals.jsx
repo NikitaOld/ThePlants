@@ -14,19 +14,19 @@ const NewArrivals = () => {
             id: 2,
             name: 'plant2',
             price: 500,
-            image: 'plant2.png',
+            image: 'plant1.png',
         },
         {
             id: 3,
             name: 'plant3',
             price: 5000,
-            image: 'plant3.png',
+            image: 'plant1.png',
         },
         {
             id: 4,
             name: 'plant4',
             price: 3000,
-            image: 'plant4.png',
+            image: 'plant1.png',
         },
     ]);
 

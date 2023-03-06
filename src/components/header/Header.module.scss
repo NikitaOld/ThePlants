@@ -2,6 +2,7 @@ $search-icon: url('../../../public/resources/img/icons/search.png');
 
 .header {
   padding: 20px 0;
+  position: relative;
 }
 
 .navbar {
@@ -11,6 +12,10 @@ $search-icon: url('../../../public/resources/img/icons/search.png');
 }
 
 .logo{
+  cursor: pointer;
+}
+
+.logoLink{
   font-size: 24px;
   flex-basis: 10%;
   cursor: pointer;
@@ -37,11 +42,10 @@ $search-icon: url('../../../public/resources/img/icons/search.png');
   cursor: pointer;
 }
 
-.item{
-  a{
-    transition: color 0.3s ease;
-  }
-  a:hover{
+.linkToPage{
+  transition: color 0.3s ease;
+
+  &:hover{
     color: #00ab84;
   }
 }
